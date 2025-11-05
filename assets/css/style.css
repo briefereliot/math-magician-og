@@ -443,6 +443,9 @@ input[type=number] {
     min-width: unset;
     font-size: 17px;
   }
+  .game-container {
+    height: auto
+  }
 }
 @media screen and (max-width: 456px) {
   .section {
@@ -461,7 +464,10 @@ input[type=number] {
   .board--padding {
     padding: 20px;
   }
-}
+  .game-container {
+    height: auto
+  }
+  }
 /* V2 KEEP ON BOTTOM */
 .hidden {
   display: none !important;
