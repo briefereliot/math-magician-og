@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-PZQX6VNSDJ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-PZQX6VNSDJ');
+</script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A free, ad free, easy to use math facts program for kids">
+  <link rel='canonical' href='https://mathmagicianteaching.com/mathmagician/' />
+  <link rel="apple-touch-icon" sizes="180x180" href="./assets/img/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./assets/img/favicon-16x16.png">
+  <link rel="manifest" href="./assets/img/site.webmanifest">
+  <title>Math Magician</title>
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+
+  <section class="section active" data-section="home">
+    <div class="home-container">
+      <div class="board-container">
+        <div class="board board--padding">
+          <h1 class="board__title">Are you a Math Magician?</h1>
+          <small class="board__subtext">SELECT A GAME MODE</small>
+          <div class="home__buttons">
+            <button class="button button--large" data-mode="addition"><span class="button__text">Addition</span> <span class="button__symbol">&plus;</span> </button>
+            <button class="button button--large" data-mode="subtraction"><span class="button__text">Subtraction</span> <span class="button__symbol"> &minus;</span> </button>
+            <button class="button button--large" data-mode="multiplication"><span class="button__text">Multiplication</span> <span class="button__symbol">&times;</span></button>
+            <button class="button button--large" data-mode="division"><span class="button__text">Division</span>  <span class="button__symbol">&divide;</span> </button>
+            <button class="button button--large button--complex" data-mode="multiplication_division"><span class="button__text">Multiply and Divide</span> <span class="button__symbol">&times; &divide;</span></button>
+            <button class="button button--large button--complex" data-mode="complex"><span class="button__text">Complex Mixed</span>  <span class="button__symbol">&plus; &minus; &times; &divide;</span> </button>
+          </div>
+        </div>
+      </div>      
+      <div class="input-container">
+        <input type="text" name="name" id="name" value="" placeholder="Enter your name here" autocomplete="off" data-name>
+        <button class="button" data-button="proceed">Proceed &nbsp;&raquo;</button>
+            
+        <div class="container">
+          <p class="pull-right text-muted">If you appreciate this program please donate to help cover server and development costs</p>
+
+          <form action="https://www.paypal.com/donate" method="post" target="_top">
+            <input type="hidden" name="hosted_button_id" value="CB7PBNQUR6CNG" />
+            <input type="image" id="paypal-button" src="https://mathmagicianteaching.com/mathmagician/assets/img/paypal-donate-blue-button-hd-png-701751695036596qehbfeogb7.png" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+            <img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif"/>
+          </form> 
+        </div>
+
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <p class="pull-left copyright text-muted">&copy; Math Magician Teaching</p>
+              <p class="pull-right text-muted">Created by Eric Olsen for his Mom's 3rd grade class</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" data-section="menu">
+    <div class="menu-container">
+      <div class="option-container">
+        <button class="option" data-option="1">x1</button>
+        <button class="option" data-option="2">x2</button>
+        <button class="option" data-option="3">x3</button>
+        <button class="option" data-option="4">x4</button>
+        <button class="option" data-option="5">x5</button>
+      </div>
+      <div class="board-container">
+        <div class="board">
+          <h1 class="board__title">Are you a Math Magician?</h1>
+          <span class="board__text">Today's challenge</span>
+          <span class="board__text"><span data-game="mode">Multiplication</span> facts</span>
+          <span class="board__challenge" data-current-task>x5</span>
+          <span class="board__text" data-game="description">Answer 20 questions in 1 minute</span>
+        </div>
+        <button class="option option--large" data-option="Mixed">Mixed</button>
+      </div>
+      <div class="option-container">
+        <button class="option" data-option="6">x6</button>
+        <button class="option" data-option="7">x7</button>
+        <button class="option" data-option="8">x8</button>
+        <button class="option" data-option="9">x9</button>
+        <button class="option" data-option="10">x10</button>
+      </div>
+      <div class="flex-row">
+        <button class="button" data-button="back">&laquo;&nbsp; Back</button>
+        <button class="button" data-button="start">Start &nbsp;&raquo;</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" data-section="game">
+    <div class="game-container">
+      <header class="game__header">
+        <span class="game__text"><span data-game="mode">Multiplication</span> Facts<span class="game__type" data-game="type">x5</span></span>
+        
+        <span class="game__text">
+          <span data-game="round">1</span> / <span data-game="total-round">20</span>
+        </span>
+      </header>
+      
+      <main class="game__main" data-game="main">
+        <span data-game="value-1">0</span>
+        <span data-game="operator">x</span>
+        <span data-game="value-2">5</span>
+        <span>=</span>
+        <form action="" data-game="form">
+          <input class="game__answer" type="text" inputmode="numeric" pattern="[0-9]*" data-game="answer" min="0" max="999" step="1" placeholder="?">
+        </form>
+      </main>
+
+      <div class="game__timer-text hidden" data-timer="time-up">
+        Time Up!
+        <button class="button" data-button="restart">Restart&nbsp;&olarr;</button>
+      </div>
+
+      <footer class="game__timer">
+        <div class="game__timer-fill" data-timer="fill"></div>
+        <div class="game__timer-seconds" data-timer="seconds"></div>
+      </footer>
+    </div>
+  </section>
+
+  <section class="section" data-section="result">
+    <div class="result-container">
+      <h2 class="result__title">You have completed the game!</h2>
+      <h3 class="result__subtitle" data-result="game-type"></h3>
+      <span class="result__percent" data-result="percent">100%</span>
+      <span class="result__message" data-result="message">Outstanding</span>
+      <div class="result__print hidden" data-result="print">
+        <span>Press 'Claim' to download your certificate</span>
+        <button class="button" data-button="certificate">Claim your certificate</button>
+      </div>
+      <span class="result__completion" data-result="time"></span>
+      <button class="button" data-button="again">Try Again&nbsp;&olarr;</button>
+    </div>
+  </section>                
+
+  <script src="https://unpkg.com/pdf-lib/dist/pdf-lib.min.js"></script>  
+  <script src="https://unpkg.com/@pdf-lib/fontkit@0.0.4"></script>  
+  <script src="./assets/js/filesaver.min.js"></script> 
+  <script src="./assets/js/main.js"></script>
+
+  
+  
+
+</body>
+</html>
